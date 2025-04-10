@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minecraft Beautiful</title>
+        <link rel="stylesheet" href="src/styles/MinecraftBTpage.css" />
+        <link rel="shortcut icon" href="./src/assets/icons/favicon2.png" type="image/x-icon" />
+    </head>
+    <body>
+
+        <style>
+            body {
+         font-family: Arial, Helvetica, sans-serif;
+         background-image: url(src/assets/icons/mcbt.png); /* Substitua 'imagem.jpg' pelo caminho da sua imagem */
+         background-size: cover; /* Faz a imagem cobrir toda a tela */
+         background-position: center; /* Centraliza a imagem */
+         background-repeat: no-repeat; /* Evita que a imagem se repita */
+        }
+        </style>
+
+<div class="navbar">
+    <div class="nav-container clearfix">
+        <div class="logo">
+            <img src="./src/assets/icons/beautiful.png" alt="Logo KingMine" />
+        </div>
+        
+        <a href="index.html" class="nav-link active">Home</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-link" id="mods-link">Jogos</a>
+            <div class="dropdown-content" id="mods-dropdown">
+                <a href="MinecraftBT.html">Minecraft Beautiful</a>
+                <a href="devpage.html">Bedrock Edition</a>
+            </div>
+        </div>
+        
+        <a href="servidores.html" class="nav-link">Servidores</a>
+        <a href="devpage.html" class="nav-link">Sobre</a>
+        <a href="devpage.html" class="nav-link">Suporte</a>
+        <a href="devpage.html" class="nav-link">Social</a>
+        <a href="devpage.html" class="nav-link">Marketplace</a>
+        <a href="devpage.html" class="nav-link">Notícias</a>
+    </div>
+    <div class="auth-buttons">
+        <a href="devpage.html" class="auth-button login-btn">Entrar</a>
+        <a href="devpage.html" class="auth-button signup-btn">Criar Conta</a>
+    </div>
+</div>
+         <!-- Hero Section -->
+    <section class="hero">
+        <div class="panorama-container">
+            <div class="panorama-box">
+                <div class="panorama-image"></div>
+            </div>
+        </div>
+
+        <div class="bg-animation"></div>
+        <img src="./src/assets/icons/beautiful.png" alt="Logo Grande do Mod" class="hero-logo">
+        <button class="scroll-btn" id="scrollBtn">DESCUBRA MAIS</button>
+    </section>
+    
+    <!-- Game Section -->
+    <section class="game-section" id="gameSection">
+        <h2>O JOGO</h2>
+        
+        <!-- Primeira linha de conteúdo -->
+        <div class="content-row">
+            <div class="text-content">
+                <h3>Explore um Novo Mundo</h3>
+                <p>Transforme seu Minecraft no PlayStation 3 com o Minecraft Beautiful! Desfrute de gráficos aprimorados, mecânicas otimizadas e adições exclusivas que elevam sua experiência a outro nível. Com atualizações constantes e suporte dedicado, este é o mod definitivo para quem busca um jogo mais imersivo e envolvente.</p>
+            </div>
+            <div class="image-content">
+                <img src="./src/assets/icons/Dragon.png" alt="Steve explorando">
+            </div>
+        </div>
+        
+        <!-- Segunda linha de conteúdo (invertida) -->
+        <div class="content-row reverse">
+            <div class="text-content">
+                <h3>Melhorias e Adicoes</h3>
+                <p>O Minecraft Beautiful traz mais de 49 aprimoramentos cuidadosamente projetados para transformar sua experiência de jogo, tornando-a mais imersiva, envolvente e visualmente deslumbrante. Cada melhoria, desde ajustes gráficos impressionantes até aperfeiçoamentos mecânicos inovadores, foi desenvolvida com atenção minuciosa aos detalhes, garantindo um jogo mais fluido, realista e impactante. </p>
+                <button class="list-btn" id="listBtn">Ver Lista Completa</button>
+            </div>
+            <div class="image-content2">
+                <img src="./src/assets/icons/Vilager.png" alt="Novos itens">
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // Script para rolagem suave ao clicar no botão
+        document.getElementById('scrollBtn').addEventListener('click', function() {
+            document.getElementById('gameSection').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        // Script para rolagem suave ao clicar no botão
+        document.getElementById('listBtn').addEventListener('click', function() {
+            document.getElementById('listSection').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        
+    </script>
+      
+    <!-- Seção de Screenshots -->
+        <div class="container">
+            <div class="section-title">
+                <h2>Screenshots</h2>
+                <p>Veja como nosso mod transforma visualmente o jogo com imagens capturadas diretamente no PlayStation 3.</p>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./src/assets/screenshots/Captura1.png" alt="Screenshot 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="./src/assets/screenshots/Captura2.png" alt="Screenshot 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="./src/assets/screenshots/Captura3.png" alt="Screenshot 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="./src/assets/screenshots/Minecraft Bedrock Edition_35.png" alt="Screenshot 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="./src/assets/screenshots/Minecraft Bedrock Edition_37.png" alt="Screenshot 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="./src/assets/screenshots/Minecraft Bedrock Edition_40.png" alt="Screenshot 6">
+                </div>
+
+                <div class="gallery-item hidden">
+                    <img src="./src/assets/screenshots/captura4.jpeg" alt="Imagem 4">
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="./src/assets/screenshots/captura5.jpeg" alt="Imagem 5">
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="./src/assets/screenshots/captura6.jpeg" alt="Imagem 6">
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="./src/assets/screenshots/captura7.jpeg" alt="Imagem 4">
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="./src/assets/screenshots/captura8.jpeg" alt="Imagem 5">
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="./src/assets/screenshots/captura9.jpeg" alt="Imagem 6">
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="./src/assets/screenshots/captura10.jpeg" alt="Imagem 4">
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="./src/assets/screenshots/captura5.jpeg" alt="Imagem 5">
+                </div>
+            </div>
+        </div>
+        <button class="ver-mais-img-btn" onclick="alternarImagens()" id="toggle-btn">Ver mais</button>
+    </section>
+
+
+     <!-- Game Section -->
+     <section class="list-section" id="listSection">
+             <!-- Primeira linha de conteúdo -->
+            <div class="content-row">
+                <div class="box-list">
+                <div class="list-content">
+                    <h3>Lista Completa de Melhorias</h3>
+                    <p>
+                        <strong>Melhorias feitas no jogo:</strong> <br>
+                        Menus melhorados <br>
+                        Texturas dos blocos aprimoradas <br>
+                        Interface em modo escuro <br>
+                        Textura Alfa aprimorada <br>
+                        <span id="mais-melhorias" class="hidden">
+                            Textura Faithfull aprimorada <br>
+                            Skins Packs antigos corrigidos <br>
+                            Todos os textos do jogo melhorados <br>
+                            HUDs aprimorados <br>
+                            Nova barra de XP adicionada <br>
+                            XBM melhorada <br>
+                            Espaço do título com o ícone da PS Plus ajustado na XMB <br>
+                            Novidades organizadas nos menus <br>
+                            Panorama aprimorada <br>
+                            Textura das bordas das árvores removida <br>
+                            MipMap2 da água mais transparente <br>
+                            Compression default otimizado <br>
+                            Todas as texturas originais melhoradas <br>
+                            Efeitos de chuva e neve aprimorados <br>
+                            Sol e lua agora em 3D <br>
+                            Nuvens aprimoradas <br>
+                            Iluminação melhorada <br>
+                            Iluminação mais quente <br>
+                            Savana mais realista e dourada <br>
+                            <br>
+                            <br>
+                            <br>
+                        </span>
+                        <span class="ver-mais-btn" onclick="mostrarMais('mais-melhorias', this)">Ver mais</span>
+            
+                </div>
+                </div>
+                <div class="box-list">
+                <div class="list-content2">
+                    <h3>Lista Completa de Adicoes</h3>
+                    <p>
+                        <strong>Novidades adicionadas ao jogo:</strong> <br>
+                        Nova panorama implementada <br>
+                        Trilha sonora da Dreamscape adicionada <br>
+                        Mais de 200 novas skins gratuitas <br>
+                        Texture Pack Actions & Stuffs <br>
+                        <span id="mais-novidades" class="hidden">
+                            Texture Pack Neve <br>
+                            Texture Pack Natal <br>
+                            Texture Pack Kingdom Two Crowns <br>
+                            Texture Pack Medieval <br>
+                            Textura Filme Minecraft <br>
+                            Textura Saturada <br>
+                            Textura 3D <br>
+                            Textura Original <br>
+                            Skin Pack de aniversário de 1 ano do King Mine <br>
+                            Skin Pack 4D <br>
+                            Skins Kingdom Two Crowns <br>
+                            Skins Minecraft Dungeons <br>
+                            Capa para skins de Youtubers adicionada <br>
+                            Mapa do Void adicionado <br>
+                            5 novos mapas clássicos (como o de polícia e ladrão do Authentic Games) <br>
+                            Chat de texto implementado <br>
+                            Configurador de FOV adicionado <br>
+                            Mais de 20 animações em blocos <br>
+                            Vegetação animada <br>
+                            Menus aprimorados <br>
+                            Sistema de marketplace e addons integrado <br>
+                            <br>
+                        </span>
+                        <span class="ver-mais-btn" onclick="mostrarMais('mais-novidades', this)">ver mais</span>
+                    </p>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    
+        
+        <!-- Segunda linha de conteúdo (invertida) -->
+        <div class="content-row-center">
+            <div class="image-content3">
+                <img src="./src/assets/icons/pig.png" alt="Novos itens">
+            </div>
+            <div class="text-contentlast">
+                <h3>Porque o Nosso Mod</h3>
+                <p>O Minecraft Beautiful é, sem dúvida, o melhor mod já criado para Minecraft no PlayStation 3. Com mais de 49 aprimoramentos exclusivos, ele eleva a experiência do jogo a um nível totalmente novo, tornando-o mais bonito, imersivo e otimizado do que qualquer outro mod disponível.  
+                    Cada melhoria, desde ajustes gráficos impressionantes até aprimoramentos mecânicos inovadores, foi cuidadosamente projetada para oferecer a melhor experiência possível. Além disso, o mod conta com suporte 24 horas, atualizações gratuitas e adições únicas, garantindo que os jogadores sempre tenham novidades e um desempenho excepcional.  
+                    Se você busca o Minecraft definitivo no PlayStation 3, Minecraft Beautiful é a escolha perfeita.</p>
+                <button class="buy-btn" id="buyBtn">Comprar Agora</button>
+            </div>
+            <div class="image-content4">
+                <img src="./src/assets/icons/fox.png" alt="Novos itens">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Seção de Compra -->
+<section class="purchase-section" id="purchase">
+    <div class="container">
+        <h2 class="purchase-title">ADQUIRA O MINECRAFT BEAUTIFUL</h2>
+        
+        <div class="purchase-options">
+            <!-- Opção 1 -->
+            <div class="purchase-option basic">
+                <div class="option-header">
+                    <h3>VERSÃO BÁSICA</h3>
+                    <div class="price">R$ 19,90</div>
+                </div>
+                <ul class="features-list">
+                    <li>Acesso ao mod principal</li>
+                    <li>Suporte 24 Horas</li>
+                    <li>Atualizações gratuitas</li>
+                    <li>Acesso a Todas as modificações</li>
+                </ul>
+                <button class="minecraft-button">COMPRAR BÁSICO</button>
+            </div>
+            
+            <!-- Opção 2 -->
+            <div class="purchase-option featured">
+                <div class="option-header-os">
+                    <h3>VERSÃO PREMIUM</h3>
+                    <div class="price-os">Em breve</div>
+                </div>
+                <ul class="features-list-os">
+                    <li>Tudo da versão básica</li>
+                    <li>Suporte prioritário</li>
+                    <li>5 mundos exclusivos adicionais</li>
+                    <li>Itens exclusivos in-game</li>
+                    <li>Acesso antecipado às novidades</li>
+                </ul>
+                <button class="minecraft-button premium">COMPRAR PREMIUM</button>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <script>
+        function mostrarMais(id, btn) {
+            var elemento = document.getElementById(id);
+            if (elemento.style.display === "none" || elemento.classList.contains("hidden")) {
+                elemento.style.display = "inline";
+                elemento.classList.remove("hidden");
+                btn.innerText = "Ver menos";
+            } else {
+                elemento.style.display = "none";
+                elemento.classList.add("hidden");
+                btn.innerText = "Ver mais";
+            }
+        }
+
+
+        function alternarImagens() {
+            var imagens = document.querySelectorAll(".gallery-item.hidden");
+            var botao = document.getElementById("toggle-btn");
+
+            imagens.forEach(img => {
+                if (img.style.display === "none" || img.classList.contains("hidden2")) {
+                    img.style.display = "block";
+                    img.classList.remove("hidden2");
+                } else {
+                    img.style.display = "none";
+                    img.classList.add("hidden2");
+                }
+            });
+
+            // Alternar o texto do botão
+             if (imagens.classList.contains("hidden")) {
+                imagens.style.display = "grid"; 
+                imagens.classList.remove("hidden");
+                botao.innerText = "Ver menos";
+            } else {
+                imagens.style.display = "none";
+                imagens.classList.add("hidden");
+                botao.innerText = "Ver mais";
+            }
+        }
+
+
+          // Script para rolagem suave ao clicar no botão
+          document.getElementById('buyBtn').addEventListener('click', function() {
+            document.getElementById('purchase').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+
+
+               <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navegação</h3>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#jogos">Jogos</a>
+                    <a href="servidores.html">Servidores</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="suporte.html">Suporte</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <div class="footer-links">
+                    <a href="#">Downloads</a>
+                    <a href="#">Tutoriais</a>
+                    <a href="#">Mods & Texturas</a>
+                    <a href="#">Fórum da Comunidade</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>maximusgfortes@gmail.com</p>
+                <p>São Paulo, Brasil</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">DC</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 KingMineStudios - Todos os direitos reservados</p>
+        </div>
+        <div class="footer-bottom2">
+            <p>A King Mine Studios e o projeto Minecraft Beautiful não são afiliados, aprovados ou associados à Mojang Studios, Microsoft ou seus parceiros oficiais.</p>
+        </div>
+    </div>
+
+    </body>
+</html>

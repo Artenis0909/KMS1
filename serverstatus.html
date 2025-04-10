@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>King Mine Status</title>
+    <link rel="stylesheet" href="src/styles/serverstatus.css" />
+</head>
+
+<body>
+    
+    <div class="navbar">
+        <div class="nav-container clearfix">
+            <div class="logo">
+                <img src="./src/assets/icons/logokingmine.png" alt="Logo KingMine" />
+            </div>
+            
+            <a href="Server.html" class="nav-link active">Home</a>
+            
+            <div class="dropdown">
+                <a href="#" class="dropdown-link" id="mods-link">Jogos</a>
+                <div class="dropdown-content" id="mods-dropdown">
+                    <a href="MinecraftBT.html">Minecraft Beautiful</a>
+                    <a href="MinecraftBedrock.html">Bedrock Edition</a>
+                </div>
+            </div>
+            
+            <a href="servidores.html" class="nav-link">Servidores</a>
+            <a href="devpage.html" class="nav-link">Sobre</a>
+            <a href="devpage.html" class="nav-link">Suporte</a>
+            <a href="#" class="nav-link">Social</a>
+            <a href="devpage.html" class="nav-link">Marketplace</a>
+            <a href="devpage.html" class="nav-link">Notícias</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="login.html" class="auth-button login-btn">Entrar</a>
+            <a href="signup.html" class="auth-button signup-btn">Criar Conta</a>
+        </div>
+    </div>
+
+        <!-- Game Section -->
+        <section class="game-section" id="gameSection">
+            
+            <!-- Primeira linha de conteúdo -->
+            <div class="content-row">
+                <div class="text-content">
+                    <h3>Status de Serviços</h3>
+                    <p>Servidor Survival PS3:<spam class="green_status"> • Online</spam> </p>
+                    <p>Servidor Criativo PS3:<spam class="green_status"> • Online</spam> </p>
+                    <p>Servidor Minigames PS3:</p>
+                    <p>Servidor Minigames Bedrock:</p>
+                </div>
+            </div>
+            
+            <!-- Segunda linha de conteúdo (invertida) -->
+            <div class="content-row reverse">
+                <div class="text-content">
+                    <h3>Outras Opcoes</h3>
+                    <p>escolha o botão abaixo de sua preferencia.<br> o botão de direcionara ao item desejado</p>
+                    <a href="https://discord.gg/u62bnQBFsv" target="_blank">
+                        <button class="list-btn2" id="listBtn">Discord</button>
+                    </a>                   
+                    <button class="list-btn2" id="listBtn">Tik Tok</button>
+                    <a href="https://www.youtube.com/@KINGMINE." target="_blank">
+                    <button class="list-btn2" id="listBtn">Youtube</button>
+                    </a>
+                    <button class="list-btn2" id="listBtn">Capturas de Tela</button>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            // Script para rolagem suave ao clicar no botão
+            document.getElementById('scrollBtn').addEventListener('click', function() {
+                document.getElementById('gameSection').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+            // Script para rolagem suave ao clicar no botão
+            document.getElementById('listBtn').addEventListener('click', function() {
+                document.getElementById('listSection').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+            
+        </script>
+</body>
+</html>

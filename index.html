@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>King Mine Network</title>
+        <link rel="stylesheet" href="src/styles/serverpage.css" />
+        <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon" />
+    </head>
+
+    <body>
+        <div class="navbar">
+            <div class="nav-container clearfix">
+                <div class="logo">
+                    <img src="./src/assets/icons/logokingmine.png" alt="Logo KingMine" />
+                </div>
+                
+                <a href="Server.html" class="nav-link active">Home</a>
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-link" id="mods-link">Jogos</a>
+                    <div class="dropdown-content" id="mods-dropdown">
+                        <a href="MinecraftBT.html">Minecraft Beautiful</a>
+                        <a href="MinecraftBedrock.html">Bedrock Edition</a>
+                    </div>
+                </div>
+                
+                <a href="servidores.html" class="nav-link">Servidores</a>
+                <a href="devpage.html" class="nav-link">Sobre</a>
+                <a href="devpage.html" class="nav-link">Suporte</a>
+                <a href="#" class="nav-link">Social</a>
+                <a href="devpage.html" class="nav-link">Marketplace</a>
+                <a href="devpage.html" class="nav-link">Notícias</a>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="auth-button login-btn">Entrar</a>
+                <a href="signup.html" class="auth-button signup-btn">Criar Conta</a>
+            </div>
+        </div>
+
+         <!-- Hero Section -->
+    <section class="hero">
+        <div class="panorama-container">
+            <div class="panorama-box">
+                <div class="panorama-image"></div>
+            </div>
+        </div>
+
+        <div class="bg-animation"></div>
+        <img src="./src/assets/icons/logokingmine.png" alt="Logo Grande do Mod" class="hero-logo">
+    </section>
+    
+
+    <!-- Game Section -->
+    <section class="game-section" id="gameSection">
+        
+        <!-- Primeira linha de conteúdo -->
+        <div class="content-row">
+            <div class="text-content">
+                <h3>O Time</h3>
+                <p>Transforme seu Minecraft no PlayStation 3 com o Minecraft Beautiful! Desfrute de gráficos aprimorados, mecânicas otimizadas e adições exclusivas que elevam sua experiência a outro nível. Com atualizações constantes e suporte dedicado, este é o mod definitivo para quem busca um jogo mais imersivo e envolvente.</p>
+            </div>
+            <div class="image-content">
+                <img src="./src/assets/icons/theteam.png" alt="Steve explorando">
+            </div>
+        </div>
+        
+        <!-- Segunda linha de conteúdo (invertida) -->
+        <div class="content-row reverse">
+            <div class="text-content2">
+                <h3>Projetos</h3>
+                <p>nos da King Mine Studios Procuramos em cada projeto nosso trazer a melhor experiencia possivel para o jogador.
+                    nossos projetos sao minunciamente planejados e executados, cada ação e decisao dentro do projeto é avaliada, cuiddosamente feita e 
+                    adicionada. nossa equipe se esforça e sempre se esforçara para trazer a melhor experiencia ao mundo do jogos
+                </p>
+                <a href="https://discord.gg/u62bnQBFsv" target="_blank">
+                    <button class="list-btn2" id="listBtn">Minecraft Beautiful</button>
+                </a>                   
+                <button class="list-btn2" id="listBtn">Minecraft Bedrock</button>
+                <a href="https://www.youtube.com/@KINGMINE." target="_blank">
+                <button class="list-btn2" id="listBtn">Sky Wars Mode</button>
+                </a>
+                <button class="list-btn2" id="listBtn">Servidores</button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+         <!-- Footer -->
+        <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navegação</h3>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#jogos">Jogos</a>
+                    <a href="servidores.html">Servidores</a>
+                    <a href="devpage.html">Sobre</a>
+                    <a href="devpage.html">Suporte</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <div class="footer-links">
+                    <a href="#">Downloads</a>
+                    <a href="#">Tutoriais</a>
+                    <a href="#">Mods & Texturas</a>
+                    <a href="#">Fórum da Comunidade</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>maximusgfortes@gmail.com</p>
+                <p>11 96684-0822</p>
+                <p>São Paulo, Brasil</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="test.html" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">DC</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 KingMineStudios - Todos os direitos reservados</p>
+        </div>
+        <footer class="disclaimer-premium">
+            <div class="text">
+                <marquee  behavior="scroll" direction="left" scrollamount="4" style="color: #fa8704; font-weight: bold;"></marquee>
+               antes de usar os nossos serviços verifique os nossos termos e uso.
+            </marquee>
+            </div>
+            <div class="button">
+              <button type="button">termos e usos</button>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript">
+        // Script para navegação adaptada ao PS3
+        window.onload = function() {
+            // Referências aos elementos
+            var links = document.querySelectorAll('.nav-link, .dropdown-link');
+            var dropdowns = document.querySelectorAll('.dropdown');
+            var currentIndex = 0;
+            
+            // Encontrar o link ativo inicial
+            for(var i = 0; i < links.length; i++) {
+                if(links[i].classList.contains('active')) {
+                    currentIndex = i;
+                    break;
+                }
+            }
+            
+            // Implementar navegação via teclado (útil para o PS3)
+            document.addEventListener('keydown', function(e) {
+                // Navegação esquerda/direita
+                if(e.keyCode === 37) { // Esquerda
+                    currentIndex = (currentIndex > 0) ? currentIndex - 1 : links.length - 1;
+                } 
+                else if(e.keyCode === 39) { // Direita
+                    currentIndex = (currentIndex < links.length - 1) ? currentIndex + 1 : 0;
+                }
+                // Mostrar dropdown quando pressionado para baixo
+                else if(e.keyCode === 40) { // Baixo
+                    var parentDropdown = links[currentIndex].parentNode;
+                    if(parentDropdown.className === 'dropdown') {
+                        var dropdown = parentDropdown.querySelector('.dropdown-content');
+                        if(dropdown) {
+                            dropdown.style.display = 'block';
+                        }
+                    }
+                }
+                // Selecionar com Enter/X
+                else if(e.keyCode === 13) { // Enter
+                    links[currentIndex].click();
+                }
+                
+                // Remover classe ativa de todos links
+                for(var i = 0; i < links.length; i++) {
+                    links[i].classList.remove('active');
+                }
+                
+                // Adicionar classe ativa ao link selecionado
+                links[currentIndex].classList.add('active');
+                links[currentIndex].focus();
+            });
+            
+            // JavaScript alternativo para dropdown (em vez de :hover)
+            for(var i = 0; i < dropdowns.length; i++) {
+                var dropdown = dropdowns[i];
+                var dropdownLink = dropdown.querySelector('.dropdown-link');
+                var dropdownContent = dropdown.querySelector('.dropdown-content');
+                
+                // Mostrar o dropdown ao clicar
+                dropdownLink.onclick = function(e) {
+                    e.preventDefault();
+                    
+                    // Encontrar o dropdown relacionado a este link
+                    var content = this.parentNode.querySelector('.dropdown-content');
+                    
+                    // Esconder todos os outros dropdowns primeiro
+                    var allDropdowns = document.querySelectorAll('.dropdown-content');
+                    for(var j = 0; j < allDropdowns.length; j++) {
+                        if(allDropdowns[j] !== content) {
+                            allDropdowns[j].style.display = 'none';
+                        }
+                    }
+                    
+                    // Alternar a visibilidade deste dropdown
+                    if(content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                    
+                    return false;
+                };
+            }
+        };
+    </script>
+</html>
