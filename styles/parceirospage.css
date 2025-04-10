@@ -1,0 +1,290 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(src/assets/icons/survivalSV.jpg); /* Substitua 'imagem.jpg' pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+.navbar {
+    background-color: #111111ee;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ff7b00;
+    height: 40px;
+    padding: 4px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo img {
+    height: 30px;
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    background-color: #333;
+}
+
+/* Dropdown existente */
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*/<----FIM NA NAVBAR*----->*/
+/*/<----FIM NA NAVBAR*----->*/
+
+.Minecraft__info {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Altura para centralizar na página */
+    text-align: center;
+    padding: 0 10px;
+
+}
+
+.center-image {
+    margin-bottom: 30px;
+    max-width: 100%;
+    margin-top: 30px;
+    background-color: #000000dc;
+    border-radius: 30px;
+}
+
+.center-image img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.center-text {
+    color: white;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.center-text h1 {
+    font-size: 2 rem;
+    margin-bottom: 15px;
+}
+
+.center-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.center-text li {
+    padding: 8px;
+}
+
+.cta-button {
+    background-color: #ff7b00; /* Azul */
+    color: white;
+    border: none;
+    padding: 15px 80px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin-bottom: 20px;
+    box-shadow: 0 3px #000000b0; 
+    transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #da6200;
+    transform: scale3d(20px); /* Efeito de elevação */
+}
+
+.titulo {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    text-shadow: #000;
+    
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 70px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 15px;
+}
+
+.footer-section h3 {
+    color: #FF8C00;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FF8C00;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.footer-links a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FF8C00;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #FF8C00;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #888;
+}
+/* FOOTER TERMOS*/
+
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #000000, #080808);
+    padding: 1px 40px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #858585;
+}
+.disclaimer-premium .text {
+   flex-shrink: 0;
+}
+.disclaimer-premium .disclaimer-premium__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: #363636;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #000000;
+    color: #aaaaaa;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#artistList {
+    display: none;
+}
+/* Footer */
+.footer-info {
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    font-family: 'Russo One', sans-serif;
+}
+
+.server {
+    color: #fff;
+    text-decoration: none;
+}
