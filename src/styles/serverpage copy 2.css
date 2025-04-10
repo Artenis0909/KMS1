@@ -1,0 +1,371 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(src/assets/icons/survivalSV.jpg); /* Substitua 'imagem.jpg' pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* Barra de navegação principal */
+.navbar {
+    background-color: #111;
+    border-bottom: 1px solid #ff7b00;
+    height: 40px;
+    padding: 4px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Container para os elementos da navbar */
+.nav-container {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    float: left;
+    margin-right: 15px;
+    padding-top: 5px;
+}
+
+.logo img {
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+}
+
+/* Links da navegação à esquerda */
+.nav-left {
+    float: left;
+}
+
+.navbar a.nav-link {
+    float: left;
+    color: #b3b3b3;
+    text-decoration: none;
+    padding: 10px 12px;
+    margin-right: 2px;
+    text-align: center;
+}
+
+.navbar a.nav-link:hover {
+    color: #ffffff;
+}
+
+/* Botões de autenticação à direita */
+.auth-buttons {
+    float: right;
+    padding-top: 5px;
+}
+
+.auth-button {
+    display: inline-block;
+    padding: 6px 14px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.login-btn {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #2e2e2e;
+}
+
+.login-btn:hover, 
+.login-btn.active {
+    background-color: rgb(26, 26, 26);
+}
+
+.signup-btn {
+    color: #000000;
+    background-color: #ff7b00;
+    border: 1px solid #ff7b00;
+    font-weight: lighter;
+    margin-right: 20px;
+}
+
+.signup-btn:hover,
+.signup-btn.active {
+    background-color: #a55000;
+    border: 1px solid #a55000;
+}
+
+/* Estilo para dropdown */
+.dropdown {
+    float: left;
+    position: relative;
+}
+
+.dropdown a.dropdown-link {
+    display: block;
+    color: #b3b3b3;
+    text-decoration: none;
+    padding: 10px 12px;
+    margin-right: 2px;
+}
+
+.dropdown a.dropdown-link.active {
+    color: #ffffff;
+    background-color: #222;
+}
+
+/* Conteúdo do dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    border: 1px solid #333;
+    z-index: 5;
+    top: 40px;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #b3b3b3;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a.active {
+    color: #ffffff;
+}
+
+/* Novo código para seção central */
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Altura para centralizar na página */
+    text-align: center;
+    padding: 0 20px;
+}
+
+.center-image {
+    margin-bottom: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.center-image img {
+    max-width: 300px;
+    height: auto;
+}
+
+.center-text {
+    color: white;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.center-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.center-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background-color: #ff8800; /* Azul */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.cta-button:hover {
+    background-color: #ff5100;
+}
+
+
+.Botoes {
+    color: #d8d8d8;
+    font-size: 20px;
+    text-align: left;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+}
+
+.minecraft-button {
+       padding: 15px 30px;
+       background-color: #2E8B57; /* Cor verde similar ao site do Minecraft */
+       color: #fff;
+       font-size: 16px;
+       font-weight: bold;
+       text-transform: uppercase;
+       text-decoration: none;
+       border-radius: 2px;
+       box-shadow: 0 5px #1C5F3F; /* Sombra para efeito 3D */
+       transition: all 0.2s ease;
+       margin-left: 10px;
+       align-items: center;
+
+   }
+
+   .minecraft-button:hover {
+       background-color: #3CB371; /* Cor para hover */
+       box-shadow: 0 3px #1C5F3F;
+       transform: translateY(-2px); /* Efeito de elevação */
+   }
+
+   .minecraft-button:active {
+       box-shadow: 0 0 #1C5F3F;
+       transform: translateY(2px); /* Efeito de clique */
+    
+   }
+
+
+
+   /* Footer */
+   .footer {
+    background-color: #000;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 15px;
+}
+
+.footer-section h3 {
+    color: #FF8C00;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FF8C00;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.footer-links a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FF8C00;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #FF8C00;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #888;
+}
+
+/* FOOTER TERMOS*/
+
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #000000, #080808);
+    padding: 1px 40px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #858585;
+}
+.disclaimer-premium .text {
+   flex-shrink: 0;
+}
+.disclaimer-premium .disclaimer-premium__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: #363636;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #000000;
+    color: #aaaaaa;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#artistList {
+    display: none;
+}
+/* Footer */
+.footer-info {
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    font-family: 'Russo One', sans-serif;
+}
+
+.server {
+    color: #fff;
+    text-decoration: none;
+}
